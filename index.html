@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スラッシュ・バックスラッシュ変換ツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>スラッシュ・バックスラッシュ変換ツール</h1>
+    <input type="text" id="input" placeholder="ファイルパスなどを入力" onclick="selectText1()">
+    <button onclick="convert()">実行</button>   
+    <input type="text" id="output" readonly onclick="selectText2()">
+    <br>
+    <br>
+    <label>
+        <input type="radio" name="conversion" value="toSlash" checked> バックスラッシュをスラッシュに変換（\ → /）
+    </label>
+    <br>
+    <label>
+        <input type="radio" name="conversion" value="toBackslash"> スラッシュをバックスラッシュに変換（/ → \）
+    </label>
+    <script src="script.js"></script>
+</body>
+</html>
